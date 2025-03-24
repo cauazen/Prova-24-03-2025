@@ -9,19 +9,24 @@
            display: flex;
            align-items: center;
            justify-content: center;
-           background-color: blueviolet;
+           flex-direction: column; 
+           background-color: rgb(235, 189, 41);
        }
        canvas {
-           margin-top: 100px;
+           margin-top: 20px;
            background-color: gray;
        }
+       #pontuacaoDiv {
+           margin-top: 10px; 
+           font-family: Arial, sans-serif;
+           font-size: 20px;
+           color: black; 
+ }
    </style>
 </head>
 <body>
    <canvas id="jogoCanvas" width="800" height="400"></canvas>
-  
-
+   <div id="pontuacaoDiv">Pontuação: 0 | Pontuação Máxima: 0</div>
    <script src="script.js"></script>
 </body>
 </html>
-
